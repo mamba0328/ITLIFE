@@ -135,7 +135,7 @@ body {
     margin: 0;
 }
 
-.member__media {
+.member__info {
     width: 270px;
     background-color: #18B5DC;
     padding: 114px 68px;
@@ -143,12 +143,27 @@ body {
     cursor: url('../assets/img/cursors/cursor.png'), pointer;
 }
 
+.member__photo {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.member__info:hover .member__photo {
+    display: none;
+}
+
 .media {
     cursor: url('../assets/img/cursors/cursor.png'), pointer;
     display: flex;
     list-style: none;
-    gap: 4px;
+    gap: 10px;
     position: relative;
+}
+
+.member__media {
+    gap: 4px;
 }
 
 .media__link {
@@ -163,7 +178,6 @@ body {
 
 .media__link_white:hover {
     background-color: #5DCBE6;
-    ;
 }
 
 .media__link_white:hover .media__icon_blue {
@@ -220,17 +234,6 @@ body {
 .media__icon_telegram {
     -webkit-mask: url(../assets/img/icons/telegram-icon.svg) no-repeat center;
     mask: url(../assets/img/icons/telegram-icon.svg) no-repeat center;
-}
-
-.member__photo {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-.member__media:hover .member__photo {
-    display: none;
 }
 
 .member__name {
