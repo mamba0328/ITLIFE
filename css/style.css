@@ -1,0 +1,13 @@
+@import url(./normalize.css);
+@import url(../assets/fonts/Lato/Lato-Black.ttf);
+@import url(../assets/fonts/Train_One/TrainOne-Regular.ttf);
+@import url(./vars.css);
+
+html,
+body {
+    min-height: 100vh;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: var(--main-font-size);
+    color: var(--main-color);
+    font-family: 'Lato', sans-serif;
+}
