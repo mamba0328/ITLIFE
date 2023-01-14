@@ -1,13 +1,169 @@
-@import url(./normalize.css);
-@import url(../assets/fonts/Lato/Lato-Black.ttf);
-@import url(../assets/fonts/Train_One/TrainOne-Regular.ttf);
-@import url(./vars.css);
+@import url('./normalize.css');
+@import url('../assets/fonts/Lato/Lato-Black.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('./vars.css');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
 
 html,
 body {
     min-height: 100vh;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: var(--main-font-size);
     color: var(--main-color);
     font-family: 'Lato', sans-serif;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 10px 0;
+}
+
+.container {
+    max-width: var(--container-width);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 135px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__text {
+    font-family: 'Train One', cursive;
+    font-size: 1.875rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    gap: 30px;
+    font-size: 1.25;
+    line-height: 1.2;
+}
+
+.menu__link {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu__link:hover {
+    color: var(--hoover-color)
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--hoover-color);
+    color: white;
+}
+
+.btn__text {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    line-height: 1.225;
+    font-weight: 600;
+}
+
+.main {
+    border-top: 1px solid #BDBDBD;
+    background-color: #F6F6F6;
+    padding: 150px 0;
+}
+
+.introduction {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.introduction__header {
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.introduction__separetor {
+    width: 45px;
+    height: 4px;
+    background: #DDDBDB;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.introduction__text {
+    max-width: 570px;
+    margin: 0 auto;
+    color: #646464;
+    line-height: 1.5;
+}
+
+.team {
+    list-style: none;
+    margin: 0;
+}
+
+.media {
+    width: 270px;
+    background-color: #18B5DC;
+    padding: 114px 68px;
+    cursor: pointer;
+    display: flex;
+    list-style: none;
+    gap: 4px;
+}
+
+.media__link {
+    background-color: #5DCBE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    min-height: 42px;
+}
+
+.member__name {
+    margin: 20px 0 0 0;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.member_role {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #646464;
+}
+
+/* .media__link:hover {
+    background: #fff;
+    color: #18B5DC;
+}*/
