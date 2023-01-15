@@ -81,20 +81,17 @@ body {
     padding: 10px 20px;
     border: 1px solid var(--main-color);
     cursor: url('../assets/img/cursors/cursor.png'), pointer;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    line-height: 1.225;
+    font-weight: 600;
 }
 
 .btn:hover {
     background-color: var(--hoover-color);
     color: white;
     border-color: transparent;
-}
-
-.btn__text {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 1.125rem;
-    line-height: 1.225;
-    font-weight: 600;
 }
 
 .main {
